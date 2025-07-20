@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Guidance Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+     
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background: linear-gradient(to right, #007bff, #e67676);
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .question {
+      margin-bottom: 20px;
+    }
+    .option {
+      margin-bottom: 10px;
+    }
+    button {
+      display: block;
+      margin: 0 auto;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Career Guidance Quiz</h1>
+    <div class="question" id="question1">
+      <h2>1. What subjects do you enjoy the most?</h2>
+      <div class="option">
+        <input type="radio" name="q1" value="science">
+        <label for="science">Mathematics and Science</label>
+      </div>
+      <div class="option">
+        <input type="radio" name="q1" value="commerce">
+        <label for="commerce">Economics and Accountancy</label>
+      </div>
+      <div class="option">
+        <input type="radio" name="q1" value="arts">
+        <label for="arts">Literature and History</label>
+      </div>
+    </div>
+
+    <div class="question" id="question2" style="display: none;">
+      <h2>2. Which activities do you find most interesting?</h2>
+      <div class="option">
+        <input type="radio" name="q2" value="science">
+        <label for="science">Conducting experiments and solving scientific problems</label>
+      </div>
+      <div class="option">
+        <input type="radio" name="q2" value="commerce">
+        <label for="commerce">Analyzing financial data and business trends</label>
+      </div>
+      <div class="option">
+        <input type="radio" name="q2" value="arts">
+        <label for="arts">Expressing creativity through writing, art, or music</label>
+      </div>
+    </div>
+
+    <div class="question" id="question3" style="display: none;">
+      <h2>3. What are your career aspirations?</h2>
+      <div class="option">
+        <input type="radio" name="q3" value="science">
+        <label for="science">Engineering, Medicine, or Research</label>
+      </div>
+      <div class="option">
+        <input type="radio" name="q3" value="commerce">
+        <label for="commerce">Business Management, Finance, or Entrepreneurship</label>
+      </div>
+      <div class="option">
+        <input type="radio" name="q3" value="arts">
+        <label for="arts">Teaching, Journalism, Social Work, or Public Service</label>
+      </div>
+    </div>
+
+    <div class="question" id="question4" style="display: none;">
+      <h2>4. Which subjects do you excel in?</h2>
+      <div class="option">
+        <input type="radio" name="q4" value="science">
+        <label for="science">Physics, Chemistry, and Biology</label>
+      </div>
+      <div class="option">
+        <input type="radio" name="q4" value="commerce">
+        <label for="commerce">Mathematics and Accounts</label>
+      </div>
+      <div class="option">
+        <input type="radio" name="q4" value="arts">
+        <label for="arts">Literature and Social Sciences</label>
+      </div>
+    </div>
+
+    <div class="question" id="question5" style="display: none;">
+      <h2>5. What type of learning environment do you prefer?</h2>
+      <div class="option">
+        <input type="radio" name="q5" value="science">
+        <label for="science">Hands-on experiments and practical applications</label>
+      </div>
+      <div class="option">
+        <input type="radio" name="q5" value="commerce">
+        <label for="commerce">Analytical and problem-solving exercises</label>
+      </div>
+      <div class="option">
+        <input type="radio" name="q5" value="arts">
+        <label for="arts">Discussion-based classes and creative projects</label>
+      </div>
+    </div>
+
+    <div class="question" id="question6" style="display: none;">
+      <h2>6. Which career path interests you the most?</h2>
+      <div class="option">
+        <input type="radio" name="q6" value="science">
+        <label for="science">Engineering, Medicine, or Research</label>
+      </div>
+      <div class="option">
+        <input type="radio" name="q6" value="commerce">
+        <label for="commerce">Business Management, Accounting, or Marketing</label>
+      </div>
+      <div class="option">
+        <input type="radio" name="q6" value="arts">
+        <label for="arts">Literature, Fine Arts, or Psychology</label>
+      </div>
+    </div>
+    
+    <div class="question" id="question7" style="display: none;">
+      <h2>7. How do you prefer to spend your free time?</h2>
+      <div class="option">
+        <input type="radio" name="q7" value="science">
+        <label for="science">Conducting scientific experiments or participating in science fairs</label>
+      </div>
+      <div class="option">
+        <input type="radio" name="q7" value="commerce">
+        <label for="commerce">Managing finances or learning about stock markets</label>
+      </div>
+      <div class="option">
+        <input type="radio" name="q7" value="arts">
+        <label for="arts">Reading books, writing stories, or exploring different cultures</label>
+      </div>
+    </div>
+    <!-- Add this block of code below the existing questions -->
+
+<div class="question" id="question8" style="display: none;">
+    <h2>8. Which extracurricular activities do you enjoy the most?</h2>
+    <div class="option">
+      <input type="radio" name="q8" value="science">
+      <label for="science">Science clubs, robotics, or coding competitions</label>
+    </div>
+    <div class="option">
+      <input type="radio" name="q8" value="commerce">
+      <label for="commerce">Debating societies, business competitions, or finance clubs</label>
+    </div>
+    <div class="option">
+      <input type="radio" name="q8" value="arts">
+      <label for="arts">Drama, music, literature clubs, or community service</label>
+    </div>
+  </div>
+  <div class="question" id="question9" style="display: none;">
+    <h2>9. How do you prefer to solve problems?</h2>
+    <div class="option">
+      <input type="radio" name="q9" value="science">
+      <label for="science">Using scientific methods and logical reasoning</label>
+    </div>
+    <div class="option">
+      <input type="radio" name="q9" value="commerce">
+      <label for="commerce">Analyzing data and making strategic decisions</label>
+    </div>
+    <div class="option">
+      <input type="radio" name="q9" value="arts">
+      <label for="arts">Thinking creatively and exploring various perspectives</label>
+    </div>
+  </div>
+  <div class="question" id="question10" style="display: none;">
+    <h2>10. Which type of projects do you find most engaging?</h2>
+    <div class="option">
+      <input type="radio" name="q10" value="science">
+      <label for="science">Scientific experiments or engineering projects</label>
+    </div>
+    <div class="option">
+      <input type="radio" name="q10" value="commerce">
+      <label for="commerce">Business plans or financial analysis projects</label>
+    </div>
+    <div class="option">
+      <input type="radio" name="q10" value="arts">
+      <label for="arts">Creative writing, artwork, or cultural projects</label>
+    </div>
+  </div>
+  
+  
+  
+
+    <button onclick="nextQuestion()">Next</button>
+  </div>
+
+  <script>
+    let currentQuestion = 1;
+    let answers = {};
+
+    function nextQuestion() {
+      const selectedOption = document.querySelector(`input[name="q${currentQuestion}"]:checked`);
+      if (!selectedOption) {
+        alert("Please select an option.");
+        return;
+      }
+      answers[`q${currentQuestion}`] = selectedOption.value;
+      currentQuestion++;
+      if (currentQuestion <= 10) {
+        document.getElementById(`question${currentQuestion - 1}`).style.display = 'none';
+        document.getElementById(`question${currentQuestion}`).style.display = 'block';
+        if (currentQuestion === 10) {
+          document.querySelector('button').textContent = 'Submit';
+        }
+      } else {
+        showResult();
+      }
+    }
+
+    function showResult() {
+      let result;
+      const scienceCount = Object.values(answers).filter(answer => answer === 'science').length;
+      const commerceCount = Object.values(answers).filter(answer => answer === 'commerce').length;
+      const artsCount = Object.values(answers).filter(answer => answer === 'arts').length;
+
+      if (scienceCount > commerceCount && scienceCount > artsCount) {
+        result = 'Science Stream';
+      } else if (commerceCount > scienceCount && commerceCount > artsCount) {
+        result = 'Commerce Stream';
+      } else {
+        result = 'Arts Stream';
+      }
+
+      document.querySelector('.container').innerHTML = `
+        <h1>Your Recommended Stream: ${result}</h1>
+        <p>Based on your interests and abilities, it is recommended that you choose ${result}.</p>
+      `;
+    }
+  </script>
+</body>
+</html>
+
